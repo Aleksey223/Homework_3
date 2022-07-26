@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarShop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Выбор автомобиля Вашей мечты</h1>
+        <br>
+        <hr>
+    </header>
+    <main>
+        <h2>Укажите параметры автомобиля который Вы хотите приобрести</h2>
+        <form action="https://fom.in.ua/echo">
+            <br>
+            <label for="tip">Тип автомобиля:</label>
+            <br>
+            <input type="radio" name="tip" id="leg" checked value="legkovoy">
+            <label for="leg">Легковой</label>
+            <br>
+            <input type="radio" name="tip" id="gruz" value="gruzovoy">
+            <label for="gruz">Грузовой</label>
+            <br>
+            <input type="radio" name="tip" id="avt" value="avtobus">
+            <label for="avt">Автобус</label>
+            <br><br>
+            <span>Страна происхождения:</span>
+            <br>
+            <select name="strana" id="str" autocomplete="off">
+                <option value="#" disabled selected></option>
+                <optgroup label="Европа">
+                    <option value="Germany">Германия</option>
+                    <option value="Holland">Голландия</option>
+                    <option value="Franch">Франция</option>
+                    <option value="Spain">Испания</option>
+                </optgroup>
+                <optgroup label="Азия">
+                    <option value="Jopan">Япония</option>
+                    <option value="Korey">Корея</option>
+                    <option value="China">Китай</option>
+                </optgroup>
+                <optgroup label="Америка">
+                    <option value="USA">США</option>
+                    <option value="Mexika">Мексика</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="trd">Марка автомобиля:</label>
+            <select name="trade" id="trd" autocomplete="off">
+                <option value="#" disabled selected></option>
+                <option value="Mersedes">Мерседес</option>
+                <option value="Audi">Ауди</option>
+                <option value="Volkswagen">Фольксваген</option>
+                <option value="Skoda">Шкода</option>
+                <option value="Opel">Опель</option>
+                <option value="Porsh">Порше</option>
+                <option value="Ford">Форд</option>
+                <option value="GMC">Линкольн</option>
+                <option value="Hammer">Хаммер</option>
+                <option value="Reno">Рено</option>
+                <option value="Pejo">Пежо</option>
+                <option value="Citroen">Сытроен</option>
+                <option value="Toyota">Тойота</option>
+                <option value="Mazda">Мазда</option>
+                <option value="Subaru">Субару</option>
+                <option value="Mitsubishi">Мицубиси</option>
+                <option value="Kia">Киа</option>
+                <option value="Hunday">Хюндай</option>
+                <option value="Chery">Чери</option>
+            </select>
+            <br><br>
+            <label for="money">Предполагаемая стоимость:</label>
+            <input type="number" name="money" id="money" min="5000" max="500000" step="1000" placeholder="$ США">
+            <br><br>
+            <label for="year">Возраст авто:</label>
+            <select name="howOld" id="old">
+                <option value="new">Новый</option>
+                <option value="3_year">До 3 лет</option>
+                <option value="3_5_year">3-5 лет</option>
+                <option value="5_10_year">5-10 лет</option>
+                <option value="10_15_year">10-15 лет</option>
+                <option value="15_20_year">15-20 лет</option>
+                <option value="aater_20_year">старше 20 лет</option>
+                <option value="retro">Ретро</option>
+                <option value="hlam">Раритет</option>
+            </select>
+            <br><br>
+            <label for="gas">Вид топлива:</label>
+            <select name="palyvo" id="gas" multiple>
+                <option value="benzin">Бензин</option>
+                <option value="dizel">Дизель</option>
+                <option value="gaz_benzin">Газ-бензин</option>
+                <option value="electro">Электро</option>
+            </select>
+            &nbsp;&nbsp;
+            <label for="kpp">Вид КПП:</label>
+            <select name="kpp" id="kpp" multiple>
+                <option value="mekhanica">Механическая</option>
+                <option value="avtomat">Гидротрансформатор</option>
+                <option value="variator">Вариатор</option>
+                <option value="robot">Роботизированная</option>
+            </select>
+            &nbsp;&nbsp;
+            <label for="comfort">Элементы комфорта:</label>
+            <select name="comfort" id="comfort" multiple>
+                <option value="luck">Люк</option>
+                <option value="kogaSalon">Кожаный салон</option>
+                <option value="avtopurking">Автопарковщик</option>
+                <option value="camera">Камера обзора</option>
+            </select>
+            &nbsp;&nbsp;
+            <label for="color">Выберите цвет авто</label>
+            <input type="color" name="color" id="col">
+            <br><br>
+            <span>Предпочтительное состояние автомобиля:</span>
+            <input type="checkbox" name="nebit" id="bit">
+            <label for="bit">Не бит</label>|
+            <input type="checkbox" name="nekrashen" id="nekr">
+            <label for="nekr">Не крашен</label>|
+            <input type="checkbox" name="ezdilaDevushka" id="ezdilaDevushka">
+            <label for="ezdilaDevushka">Ездила девушка</label>|
+            <input type="checkbox" name="ezdilDedushka" id="ezdilDedushka">
+            <label for="ezdilDedushka">Ездил дедушка</label>|
+            <input type="checkbox" name="garag" id="garag">
+            <label for="garag">Гаражное хранение</label>|
+            <input type="checkbox" name="nepolirovan" id="nepolirovan">
+            <label for="nepolirovan">Не полировался</label>|
+            <br><br>
+            <hr>
+            <input type="submit" value="Поиск">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Очистить">
+
+
+
+        </form>
+    </main>
+
+</body>
+
+</html>
